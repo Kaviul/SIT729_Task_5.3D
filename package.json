@@ -4,7 +4,8 @@
   "description": "",
   "main": "iotsensor.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node iotsensor.js"
   },
   "author": "MD KAVIUL HOSSAIN",
   "license": "ISC",

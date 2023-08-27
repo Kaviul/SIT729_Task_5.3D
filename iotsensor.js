@@ -4,17 +4,6 @@ const app = express();
 const Sensor = require('./Model/sensor');
 const mongoose = require('mongoose')
 const url ="mongodb+srv://kaviuln1335:kaviuln@cluster0.hcagxgu.mongodb.net/?retryWrites=true&w=majority"
-//const sgMongo_url = "mongodb://admin:QoTcV6tkoblTOm73@SG-boom-tiger-7766-59231.servers.mongodirector.com:27017/admin"
-//var plotly = require('plotly')("kaviuln", "0BfILaNw8CW0AKHmq3CT")
-var plotly = require('plotly')("kaviul","RX4q02OWUKAzP3Yxsc7w")
-
-
-var data =
-{
-x: [],
-y: [],
-type: "scatter"
-};
 
 
 setInterval(sensortest, 10000);
@@ -102,16 +91,7 @@ function sensortest(){
         //     }
         // })
 
-       //Data Push to Plotly-MongoDb
-
-        data.x.push((new Date()).toISOString());
-        data.y.push(time);
-        var graphOptions = {filename: "iot-Task-5.3D-mongodb", fileopt:
-        "overwrite"};
-        plotly.plot(data, graphOptions, function (err, msg) {
-        if (err) return console.log(err);
-        console.log(msg);
-        });
+     
 
 
        
