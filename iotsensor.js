@@ -3,7 +3,8 @@ const app = express();
 //var fs = require('fs')
 const Sensor = require('./Model/sensor');
 const mongoose = require('mongoose')
-const url ="mongodb+srv://kaviuln1335:kaviuln@cluster0.hcagxgu.mongodb.net/?retryWrites=true&w=majority"
+//const url ="mongodb+srv://kaviuln1335:kaviuln@cluster0.hcagxgu.mongodb.net/?retryWrites=true&w=majority"
+const url ="mongodb://localhost:27017/sensor_data"
 
 
 setInterval(sensortest, 10000);
